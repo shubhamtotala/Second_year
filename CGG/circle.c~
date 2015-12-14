@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<graphics.h>
+
+int main()
+{
+ int gd=DETECT,gm=0;
+ initgraph(&gd,&gm,NULL);//initialize graphics mode
+ 
+ circle(300,300,150);//graphics function for circle
+ getch(); //this is must to hold the output
+ closegraph();
+ return 0;
+}

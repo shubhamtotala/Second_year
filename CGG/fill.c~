@@ -1,0 +1,18 @@
+
+
+#include <graphics.h>
+
+ 
+int main(void)
+{
+   int gd=DETECT,gm,points[]={320,150,440,340,230,340,320,150};
+ 
+   initgraph(&gd, &gm, NULL);
+   
+   //setfillstyle(SOLID_FILL,RED);
+   fillpoly(4, points);
+ 
+   getch();
+   closegraph();
+   return 0;
+}
